@@ -1,4 +1,4 @@
-package gb_java_intro.lecture02;
+
 import java.io.File;
 
 public class Ex002_fileSystemDemo {

@@ -1,0 +1,26 @@
+Apr 03, 2023 7:39:08 PM logger_ex main
+INFO: element 1
+Apr 03, 2023 7:39:08 PM logger_ex main
+INFO: element 4
+Apr 03, 2023 7:39:08 PM logger_ex main
+INFO: element 3
+Apr 03, 2023 7:39:08 PM logger_ex main
+INFO: element 3
+Apr 03, 2023 7:39:08 PM logger_ex main
+INFO: element 1
+Apr 03, 2023 7:39:08 PM logger_ex main
+INFO: element 6
+Apr 03, 2023 7:39:08 PM logger_ex main
+INFO: element 1
+Apr 03, 2023 7:39:08 PM logger_ex main
+INFO: element 1
+Apr 03, 2023 7:39:08 PM logger_ex main
+INFO: element 5
+Apr 03, 2023 7:39:08 PM logger_ex main
+INFO: element 6
+Apr 03, 2023 7:39:08 PM logger_ex main
+WARNING: some warning
+Apr 03, 2023 7:39:08 PM logger_ex main
+INFO: some message
+Apr 03, 2023 7:39:08 PM logger_ex main
+WARNING: another warning but without using Level

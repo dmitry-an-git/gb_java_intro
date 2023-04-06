@@ -1,4 +1,4 @@
-package gb_java_intro.lecture02;
+
 import java.io.*;
 
 public class Ex003_tryDemo {

@@ -1,0 +1,30 @@
+Size: 100
+Iterations: 10
+MergeSortAL time: 1
+MergeSortLL time: 0
+end
+Size: 1000
+Iterations: 10
+MergeSortAL time: 3
+MergeSortLL time: 41
+end
+Size: 1000
+Iterations: 10
+MergeSortAL time: 4
+MergeSortLL time: 31
+end
+Size: 10000
+Iterations: 10
+MergeSortAL time: 13
+MergeSortLL time: 2433
+end
+Size: 10000
+Iterations: 10
+MergeSortAL time: 14
+MergeSortLL time: 3374
+end
+Size: 10000
+Iterations: 10
+MergeSortAL time: 11
+MergeSortLL time: 2225
+end

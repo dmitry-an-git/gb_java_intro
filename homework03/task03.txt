@@ -1,0 +1,18 @@
+* * *
+14:04:01.966840
+[71, 47, 33, 47, 59, 45, 74, 81, 86, 99]
+The mean is: 64.20
+The min is: 33
+The max is: 99
+* * *
+14:05:07.288345
+[73, 49]
+The mean is: 61.00
+The min is: 49
+The max is: 73
+* * *
+14:05:13.362832
+[39, 88, 55]
+The mean is: 60.67
+The min is: 39
+The max is: 88
