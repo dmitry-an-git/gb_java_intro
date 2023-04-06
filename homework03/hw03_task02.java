@@ -12,7 +12,7 @@ public class hw03_task02 {
         ArrayList<Integer> lst = fillArrayList(size);
         System.out.println(lst); 
 
-        lst = cleanArrayList(lst);
+        lst = RemoveEven(lst);
         System.out.println(lst);
     }
 
@@ -25,9 +25,9 @@ public class hw03_task02 {
         return res;
     }
 
-    public static ArrayList<Integer> cleanArrayList(ArrayList<Integer> al) {
+    public static ArrayList<Integer> RemoveEven(ArrayList<Integer> al) {
         for (int index = 0; index < al.size(); index++) {
-            if (al.get(index) % 2 == 0) {
+            if (al.get(index) % 2 == 0 && al.get(index)>0) {
                 al.remove(index);
                 index--;
             }
