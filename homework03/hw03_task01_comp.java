@@ -158,6 +158,65 @@ public class hw03_task01_comp {
         }
     }
 
+    public static int[] MergeSortAR(int[] array) {
+        
+        if (array.length == 1) {return array;}
+        else {
+            int half = array.length/2;
+            
+            int[] first = new int[half];
+            for (int index = 0; index < half; index++) {
+                first[index]=array[index];
+            }
+
+            int[] second = new int[array.length-half];
+            for (int index = 0; index < array.length-half; index++) {
+                second[index]=array[index+half];
+            }
+            
+            first = MergeSortAR(first);
+            second = MergeSortAR(second);
+
+            int[] result = new int[array.length];
+            
+            int index_f = 0;
+            int index_s = 0; 
+            int first_comp = 0;
+            int second_comp = 0;
+            int step = 0;
+
+            while (step < array.length) {
+
+                if (index_f == first.length) { 
+                    result[step] = second[index_s];
+                    index_s++;
+                }
+                
+                else if (index_s == second.length) { 
+                    result[step] = first[index_f];
+                    index_f++;
+                }
+
+                else {
+                    first_comp = first[index_f]; 
+                    second_comp = second[index_s]; 
+
+                    if (first_comp>second_comp) {
+                        result[step] = second_comp;
+                        index_s++;
+                    }
+                    else {
+                        result[step] = first_comp;
+                        index_f++;
+                    }
+                }
+                step++; 
+            }
+            // System.out.println(result);
+            return result;
+        }
+    }
+        
     public static int RecordTime(Runnable expression) {
         long start = System.currentTimeMillis();
         expression.run();
@@ -169,16 +228,22 @@ public class hw03_task01_comp {
     public static String Compare(int size, int iter) {
         
         int arrayTime = 0;
+        int listTime = 0;
         int linkedTime = 0;
+
         int counter = iter;
         while (counter>0) {
             ArrayList<Integer> arrayList = CreateArray(size);
             StringToFile(arrayList.toString());
 
+            int[] intArray = arrayList.stream().mapToInt(Integer::intValue).toArray();
+
             LinkedList<Integer> linkedList = new LinkedList<>();
             linkedList.addAll(arrayList);
+
+            arrayTime += RecordTime(() -> {MergeSortAR(intArray);});
             
-            arrayTime += RecordTime(() -> {MergeSortAL(arrayList);}); 
+            listTime += RecordTime(() -> {MergeSortAL(arrayList);}); 
             //arrayList = MergeSortAL(arrayList); // we do this to amend the actual array
             //StringToFile(arrayList.toString());
 
@@ -188,8 +253,9 @@ public class hw03_task01_comp {
             counter--;
         }
         arrayTime = arrayTime/iter;
+        listTime = listTime/iter;
         linkedTime = linkedTime/iter;
-        return String.format("Size: %d\nIterations: %d\nMergeSortAL time: %d\nMergeSortLL time: %d", 
-                                     size, iter, arrayTime, linkedTime);
+        return String.format("Size: %d\nIterations: %d\nMergeSortAR time: %d\nMergeSortAL time: %d\nMergeSortLL time: %d", 
+                                     size, iter, arrayTime, listTime, linkedTime);
     }
 }

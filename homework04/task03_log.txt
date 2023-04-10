@@ -1,0 +1,39 @@
+---- new calc ----
+1.0 + 1.0 = 2.0
+2.0 + 1.0 = 3.0
+3.0 + 1.0 = 4.0
+4.0 + 1.0 = 5.0
+5.0 + 1.0 = 6.0
+6.0 + 1.0 = 7.0
+Cancel --> the result is now 6.0
+6.0 + 1.0 = 7.0
+Cancel --> the result is now 7.0
+Cancel --> the result is now 5.0
+Cancel --> the result is now 4.0
+Cancel --> the result is now 3.0
+Cancel --> the result is now 2.0
+0.0 + 1.0 = 1.0
+1.0 + 2.0 = 3.0
+
+---- new calc ----
+1.0 + 1.0 = 2.0
+2.0 + 2.0 = 4.0
+4.0 / 2.0 = 2.0
+2.0 * 2.0 = 4.0
+4.0 - 2.0 = 2.0
+2.0 + 3.0 = 5.0
+Cancel --> the result is now 2.0
+2.0 + 2.0 = 4.0
+4.0 + 5.0 = 9.0
+9.0 + 3.0 = 12.0
+
+---- new calc ----
+5.0 + 44.0 = 49.0
+49.0 / 7.0 = 7.0
+7.0 / 3.0 = 2.3
+
+---- new calc ----
+5.0 + 5.0 = 10.0
+10.0 + 5.0 = 15.0
+Cancel --> the result is now 10.0
+10.0 + 6.0 = 16.0

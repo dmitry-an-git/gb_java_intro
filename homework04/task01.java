@@ -1,6 +1,8 @@
 import java.util.LinkedList;
 import java.util.Random;
-import java.util.Stack;
+
+// Пусть дан LinkedList с несколькими элементами. 
+// Реализуйте метод(не void), который вернет “перевернутый” список.
 
 public class task01 {
     public static void main(String[] args) {
