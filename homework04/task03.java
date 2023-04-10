@@ -100,7 +100,7 @@ public class task03 {
 
     public static String askForOperator(Scanner sc) {
 
-        System.out.print("Enter operator (+,-,*,/): ");
+        System.out.print("Enter operator (+,-,*,/,cancel): ");
         String operator = sc.nextLine();
         
         if (!(operator.equals("+") || operator.equals("-") || operator.equals("*") || operator.equals("/") || operator.equals("cancel"))){

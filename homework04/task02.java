@@ -6,7 +6,6 @@ import java.util.Random;
 // dequeue() - возвращает первый элемент из очереди и удаляет его,
 // first() - возвращает первый элемент из очереди, не удаляя.
 
-
 public class task02 {
   public static void main(String[] args) {
 
